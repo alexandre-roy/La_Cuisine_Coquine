@@ -1,1 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/*** IMPORTATION DES POLICES ***/
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+/*** VARIABLES SCSS ***/
+/* VERT PÂLE */
+$primary: #b0cfa3;
+/* VERT FONCÉ */
+$secondary: #2e4c42;
+/* BLANC CASSÉ */
+$body-bg: #f1edde;
+/* BRUN PÂLE */
+$light: #c7bd9f;
+/* BRUN FONCÉ */
+$dark: #674e2d;
+/* POLICE DES TITRES */
+$headings-font-family: "Barlow Condensed";
+/* POLICE DU TEXTE */
+$font-family-base: "Montserrat";
+
+/*** IMPORTATION DE BOOTSTRAP ***/
+@import "partials/bootstrap";

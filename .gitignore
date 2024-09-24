@@ -1,6 +1,5 @@
-#Styles CSS, car on va les recompiler avec Sass chacun de son côté
-*.css*
+#Ignorer le CSS
+/css/
 
-#Autres fichiers polluants
-.DS_Store
-/.VSCODE/
+#Autres fichiers 
+.vscode
