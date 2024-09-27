@@ -10,11 +10,139 @@
   </head>
 
   <body>
-    <header>
-      <nav></nav>
+    <header class="bg-secondary sticky-top">
+      <nav class="navbar navbar-expand-md">
+        <div class="container d-flex justify-content-between align-items-center">
+          <div>
+            <a class="navbar-brand" href="index.html">
+              <img src="img/logo.png" alt="logo" width="175" />
+            </a>
+            <h1 class="visually-hidden">La Cuisine Coquine</h1>
+          </div>
+  
+          <div class="dropdown d-md-none">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <i class="bi bi-list"></i>
+            </button>
+  
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="index.html">ACCUEIL</a></li>
+              <li>
+                <a class="dropdown-item" href="recettes.html">RECETTES</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="formulaire.html">FORMULAIRE</a>
+              </li>
+              <li><a class="dropdown-item" href="#">BOUTIQUE</a></li>
+              <li><a class="dropdown-item" href="#">INGRÉDIENTS</a></li>
+              <li><a class="dropdown-item" href="#">JOINDRE</a></li>
+            </ul>
+          </div>
+  
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto gap-5">
+              <li class="nav-item">
+                <a class="nav-link btn btn-primary text-info" href="index.html">ACCUEIL</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn btn-primary text-info" href="recettes.html">RECETTES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn btn-primary text-info" href="formulaire.html">FORMULAIRE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn btn-primary text-info" href="#">BOUTIQUE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn btn-primary text-info" href="#">INGRÉDIENTS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn btn-primary text-info" href="#">NOUS JOINDRE</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
-    <main></main>
+    <main>
+      <div class="container mt-4">
+        <div class="boite-h1">
+          <h1> Nos recettes Vedetes</h1>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <div class="img-container">
+              <img src="img/burger.jpg" class="card-img-top zoom" alt="Burger">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Burger Savoureux</h5>
+                <p class="card-text">Un burger juteux avec des ingrédients frais et une sauce maison.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="img-container">
+              <img src="img/fruitsdm.jpg" class="card-img-top zoom" alt="Salade de Fruits">
+            </div>
+              <div class="card-body">
+                <h5 class="card-title">Salade de Fruits</h5>
+                <p class="card-text">Un mélange coloré de fruits frais, parfait pour l'été.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="img-container">
+              <img src="img/oeufbacon.jpg" class="card-img-top zoom" alt="oeufbacon Grillé">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">oeufbacon Grillé</h5>
+                <p class="card-text">Un oeufbacon tendre, grillé à la perfection, accompagné de légumes.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <div class="img-container">
+              <img src="img/burger.jpg" class="card-img-top zoom" alt="Burger">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Burger Savoureux</h5>
+                <p class="card-text">Un burger juteux avec des ingrédients frais et une sauce maison.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="img-container">
+              <img src="img/fruitsdm.jpg" class="card-img-top zoom" alt="Salade de Fruits">
+            </div>
+              <div class="card-body">
+                <h5 class="card-title">Salade de Fruits</h5>
+                <p class="card-text">Un mélange coloré de fruits frais, parfait pour l'été.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="img-container">
+              <img src="img/oeufbacon.jpg" class="card-img-top zoom" alt="oeufbacon Grillé">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">oeufbacon Grillé</h5>
+                <p class="card-text">Un oeufbacon tendre, grillé à la perfection, accompagné de légumes.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
 
     <footer></footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
