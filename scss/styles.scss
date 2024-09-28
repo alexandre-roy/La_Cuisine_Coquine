@@ -63,3 +63,11 @@ $font-family-base: "Montserrat";
         transform: scale(1.1);
     }
 }
+
+.back-to-top{
+    position: fixed;
+    bottom: 4rem;
+    right: 3rem;
+    z-index: 1000;
+    color: $info;
+}
