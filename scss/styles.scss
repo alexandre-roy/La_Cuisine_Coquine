@@ -22,6 +22,16 @@ $font-family-base: "Montserrat";
 /*** IMPORTATION DE BOOTSTRAP ***/
 @import "partials/bootstrap";
 
+/*** CODE POUR LE HEADER ***/
+
+
+.nav-link {
+  &:hover {
+    color: $dark !important;
+  }
+}
+
+
 /*** CODE POUR LA PAGE ACCUIEL ***/
 
 .gros-carousel {
@@ -64,6 +74,10 @@ $font-family-base: "Montserrat";
 .carousel-control-prev {
   filter: invert(1);
 }
+
+.text-justify {
+  text-align: justify;
+}
 /*** CODE POUR LA PAGE RECETTES ***/
 
 .boite-h1 {
@@ -90,10 +104,4 @@ $font-family-base: "Montserrat";
   right: 3rem;
   z-index: 1000;
   color: $info;
-}
-
-.nav-link {
-  &:hover {
-    color: $dark;
-  }
 }
