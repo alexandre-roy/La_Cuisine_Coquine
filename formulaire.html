@@ -14,10 +14,210 @@
       <nav></nav>
     </header>
 
-    <main></main>
+    <main>
+      <form class="container bg-light p-3 text-secondary" method="post">
+        <fieldset class="m-5">
+          <legend>1. Informations personelles</legend>
+
+          <div class="row m-3">
+            <div class="col">
+              <label for="txtnom">Nom</label>
+              <input
+                class="form-control"
+                title="Votre nom complet"
+                type="text"
+                name="txtnom"
+                id="txtnom"
+                required
+              />
+            </div>
+            <div class="col">
+              <label for="mailcourriel">Courriel</label>
+              <div class="input-group">
+                <input
+                  class="form-control"
+                  title="Votre adresse courriel"
+                  type="email"
+                  name="mailcourriel"
+                  id="mailcourriel"
+                  required
+                />
+                <span class="input-group-text" id="basic-addon2"
+                  >@blabla.com</span
+                >
+              </div>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="m-5">
+          <legend>2. Évaluation d'une recette</legend>
+          <div class="row m-3">
+            <div class="col-5">
+              <label for="selrecette" class="form-label">Recette essayée</label>
+              <select
+                class="form-select"
+                name="selrecette"
+                id="selrecette"
+                required
+              >
+                <option value="" selected disabled>
+                  Veuillez choisir la recette que vous avez cuisiné
+                </option>
+                <option value="burger">Burger classique</option>
+                <option value="salade">Salade de Fruits</option>
+                <option value="oeuf">Oeuf-bacon grillé</option>
+                <option value="skib">Poisson Skibidi</option>
+                <option value="skib">Poisson Skibidi</option>
+                <option value="skib">Poisson Skibidi</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <p>Goût de la recette</p>
+            <div class="form-check col-2">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="eval"
+                id="super"
+                value="super"
+                checked
+              />
+              <label for="super">Superbe!</label>
+            </div>
+
+            <div class="form-check col-2">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="eval"
+                id="tresbonne"
+                value="tresbonne"
+              />
+              <label for="tresbonne">Très bonne!</label>
+            </div>
+
+            <div class="form-check col-2">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="eval"
+                id="correct"
+                value="correct"
+              />
+              <label for="correct">Correct</label>
+            </div>
+
+            <div class="form-check col-2">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="eval"
+                id="bof"
+                value="bof"
+              />
+              <label for="bof">Bof</label>
+            </div>
+
+            <div class="form-check col-2">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="eval"
+                id="ark"
+                value="ark"
+              />
+              <label for="ark">Dégeu!</label>
+            </div>
+          </div>
+          
+            <div class="row">
+              <p>Difficulté de la préparation</p>
+              <div class="form-check col-2">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="eval2"
+                  id="facile"
+                  value="facile"
+                  checked
+                />
+                <label for="facile">Facile</label>
+              </div>
+
+              <div class="form-check col-2">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="eval2"
+                  id="assezsimple"
+                  value="assezsimple"
+                />
+                <label for="assezsimple">Assez simple</label>
+              </div>
+
+              <div class="form-check col-2">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="eval2"
+                  id="paspire"
+                  value="paspire"
+                />
+                <label for="Pas pire">Pas pire</label>
+              </div>
+
+              <div class="form-check col-2">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="eval2"
+                  id="assezdifficile"
+                  value="assezdifficile"
+                />
+                <label for="assezdifficile">Assez Difficile</label>
+              </div>
+
+              <div class="form-check col-2">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="eval2"
+                  id="complique"
+                  value="complique"
+                />
+                <label for="complique">Compliqué</label>
+              </div>
+            </div>
+        </fieldset>
+
+        <div class="d-flex justify-content-end gap-3">
+          <input
+            class="btn btn-secondary text-info"
+            type="reset"
+            value="Supprimer"
+          />
+          <input
+            class="btn btn-secondary text-info"
+            type="submit"
+            value="Envoyer"
+          />
+        </div>
+      </form>
+    </main>
 
     <footer></footer>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
