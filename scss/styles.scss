@@ -27,7 +27,7 @@ $font-family-base: "Montserrat";
 
 .nav-link {
   &:hover {
-    color: $dark !important;
+    color: $secondary !important;
   }
 }
 
@@ -101,7 +101,7 @@ $font-family-base: "Montserrat";
 .back-to-top {
   position: fixed;
   bottom: 4rem;
-  right: 3rem;
+  right: 1.5rem;
   z-index: 1000;
   color: $info;
 }

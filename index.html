@@ -1,163 +1,300 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="favicon.ico" />
+    <title>La Cuisine Coquine | Accueil</title>
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="icon" href="favicon.ico" />
-  <title>La Cuisine Coquine | Accueil</title>
-</head>
+  <body>
+    <header class="bg-secondary sticky-top">
+      <nav class="navbar navbar-expand-md">
+        <div
+          class="container d-flex justify-content-between align-items-center"
+        >
+          <div>
+            <a class="navbar-brand" href="index.html">
+              <img src="img/logo.png" alt="logo" width="175" />
+            </a>
+            <h1 class="visually-hidden">La Cuisine Coquine</h1>
+          </div>
 
-<body>
-  <header class="bg-secondary sticky-top">
-    <nav class="navbar navbar-expand-md">
-      <div class="container d-flex justify-content-between align-items-center">
-        <div>
-          <a class="navbar-brand" href="index.html">
-            <img src="img/logo.png" alt="logo" width="175" />
-          </a>
-          <h1 class="visually-hidden">La Cuisine Coquine</h1>
+          <div class="dropdown d-md-none me-3">
+            <button
+              class="btn btn-secondary"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <i class="bi bi-list fs-1"></i>
+            </button>
+
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="index.html">ACCUEIL</a></li>
+              <li>
+                <a class="dropdown-item" href="recettes.html">RECETTES</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="formulaire.html">FORMULAIRE</a>
+              </li>
+              <li><a class="dropdown-item" href="#">BOUTIQUE</a></li>
+              <li><a class="dropdown-item" href="#">INGRÉDIENTS</a></li>
+            </ul>
+          </div>
+
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll">
+              <li class="nav-item">
+                <a
+                  class="nav-link btn btn-primary text-info me-lg-5 me-md-0 px-md-1"
+                  href="index.html"
+                  >ACCUEIL</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link btn btn-primary text-info me-lg-5 me-md-0 px-md-1"
+                  href="recettes.html"
+                  >RECETTES</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link btn btn-primary text-info me-lg-5 me-md-0 px-md-1"
+                  href="formulaire.html"
+                  >FORMULAIRE</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link btn btn-primary text-info me-lg-5 me-md-0 px-md-1"
+                  href="#"
+                  >BOUTIQUE</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn btn-primary text-info" href="#"
+                  >INGRÉDIENTS</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
+      </nav>
+    </header>
 
-        <div class="dropdown d-md-none me-3">
-          <button class="btn btn-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <i class="bi bi-list fs-1"></i>
+    <main>
+      <section class="gros-carousel">
+        <div id="carousel" class="carousel slide">
+          <div class="carousel-inner rounded border-black border border-2">
+            <div class="carousel-item active">
+              <a href="recettes.html"
+                ><img
+                  src="img/burger.jpg"
+                  class="d-block w-100 img-carousel"
+                  alt="burger"
+              /></a>
+              <div class="carousel-caption bg-primary text-secondary h-100">
+                <h2 class="text-secondary fs-1">Burger Classique</h2>
+                <p class="fs-2 mx-2">
+                  Un burger juteux avec des ingrédients frais et une sauce
+                  maison
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <a href="recettes.html"
+                ><img
+                  src="img/fruitsdm.jpg"
+                  class="d-block w-100 img-carousel"
+                  alt="soupefdm"
+              /></a>
+              <div class="carousel-caption bg-primary text-secondary h-100">
+                <h2 class="text-secondary fs-1">Soupe aux fruits de mer</h2>
+                <p class="fs-2">Une excellente soupe marinière</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <a href="recettes.html"
+                ><img
+                  src="img/oeufbacon.jpg"
+                  class="d-block w-100 img-carousel"
+                  alt="oeufbacon"
+              /></a>
+              <div class="carousel-caption bg-primary text-secondary h-100">
+                <h2 class="text-secondary fs-1">Sourire du matin</h2>
+                <p class="fs-2">Oeuf et bacon cuits à la perfection</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <a href="recettes.html"
+                ><img
+                  src="img/salade.jpg"
+                  class="d-block w-100 img-carousel"
+                  alt="salade"
+              /></a>
+              <div class="carousel-caption bg-primary text-secondary h-100">
+                <h2 class="text-secondary fs-1">Salade skibidi-grecque</h2>
+                <p class="fs-2">La salade grecque par excellence</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <a href="recettes.html"
+                ><img
+                  src="img/dumplings.jpg"
+                  class="d-block w-100 img-carousel"
+                  alt="oeufbacon"
+              /></a>
+              <div class="carousel-caption bg-primary text-secondary h-100">
+                <h2 class="text-secondary fs-1">Dumplings Dumbledore</h2>
+                <p class="fs-2">Des dumplings magiquement délicieux</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <a href="recettes.html"
+                ><img
+                  src="img/porcriz.jpg"
+                  class="d-block w-100 img-carousel"
+                  alt="oeufbacon"
+              /></a>
+              <div class="carousel-caption bg-primary text-secondary h-100">
+                <h2 class="text-secondary fs-1">Bol de riz avec porc</h2>
+                <p class="fs-2">
+                  Un bol de riz avec porc qui goûte vachement bon
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
           </button>
-
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="index.html">ACCUEIL</a></li>
-            <li>
-              <a class="dropdown-item" href="recettes.html">RECETTES</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="formulaire.html">FORMULAIRE</a>
-            </li>
-            <li><a class="dropdown-item" href="#">BOUTIQUE</a></li>
-            <li><a class="dropdown-item" href="#">INGRÉDIENTS</a></li>
-            <li><a class="dropdown-item" href="#">JOINDRE</a></li>
-          </ul>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-
-        <div class="collapse navbar-collapse">
-          <ul class="navbar-nav ms-auto gap-5">
-            <li class="nav-item">
-              <a class="nav-link btn btn-primary text-info" href="index.html">ACCUEIL</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link btn btn-primary text-info" href="recettes.html">RECETTES</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link btn btn-primary text-info" href="formulaire.html">FORMULAIRE</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link btn btn-primary text-info" href="#">BOUTIQUE</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link btn btn-primary text-info" href="#">INGRÉDIENTS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link btn btn-primary text-info" href="#">NOUS JOINDRE</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  <main>
-    <section class="gros-carousel">
-      <div id="carousel" class="carousel slide">
-        <div class="carousel-inner rounded border-black border border-2">
-          <div class="carousel-item active">
-            <img src="img/burger.jpg" href="#" class="d-block w-100 img-carousel" alt="burger">
-            <div class="carousel-caption bg-primary text-dark h-100">
-              <h2 class="text-dark fs-1">Burger Classique</h2>
-              <p class="fs-2 mx-2">Un burger juteux avec des ingrédients frais.</p>
-            </div>
+      </section>
+      <section class="container my-5">
+        <div class="row">
+          <div class="col-md-9 text-justify">
+            <h2>Bienvenue dans La Cuisine Coquine !</h2>
+            <p>
+              Explorez un monde de saveurs et de créativité culinaire avec nos
+              délicieuses recettes. Que vous soyez un cuisinier débutant ou un
+              chef expérimenté, notre collection variée de recettes vous
+              inspirera à préparer des plats savoureux et originaux. Des entrées
+              aux desserts, chaque recette est conçue pour être simple à suivre
+              et pleine de goût. Prêt à mettre votre tablier et à vous lancer en
+              cuisine ?
+            </p>
           </div>
-          <div class="carousel-item">
-            <img src="img/fruitsdm.jpg" href="#" class="d-block w-100 img-carousel" alt="soupefdm">
-            <div class="carousel-caption bg-primary text-dark h-100">
-              <h2 class="text-dark fs-1">Soupe aux fruits de mer</h2>
-              <p class="fs-2">Une soupe qui vous fera dire "skibidi".</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="img/oeufbacon.jpg" href="#" class="d-block w-100 img-carousel" alt="oeufbacon">
-            <div class="carousel-caption bg-primary text-dark h-100">
-              <h2 class="text-dark fs-1">Sourire du matin</h2>
-              <p class="fs-2">
-                Oeuf et bacon, rien de mieux pour le déjeuner!
-              </p>
-            </div>
+          <div class="col-md-1"></div>
+          <div class="col-md-2">
+            <img
+              src="img/nourriture.png"
+              class="d-block w-100"
+              alt="nourriture"
+            />
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </section>
-    <section class="container my-5">
-      <div class="row">
-        <div class="col-md-9 text-justify">
-          <h2>Bienvenue dans La Cuisine Coquine !</h2>
-          <p>Explorez un monde de saveurs et de créativité culinaire avec nos délicieuses recettes. Que vous soyez un
-            cuisinier débutant ou un chef expérimenté, notre collection variée de recettes vous inspirera à préparer des
-            plats savoureux et originaux. Des entrées aux desserts, chaque recette est conçue pour être simple à suivre
-            et pleine de goût. Prêt à mettre votre tablier et à vous lancer en cuisine ?</p>
+        <div class="row">
+          <div class="col-md-2">
+            <img src="/img/bouffe.png" class="d-block w-100" alt="bouffe" />
+          </div>
+          <div class="col-md-1"></div>
+          <div class="col-md-9 text-justify">
+            <h2>À propos de notre passion pour la cuisine</h2>
+            <p>
+              Nous sommes passionnés par la cuisine et le partage des bonnes
+              recettes. Nous croyons que cuisiner doit être accessible et
+              amusant pour tous. Notre équipe teste et sélectionne chaque
+              recette avec soin, en mettant l'accent sur des ingrédients frais
+              et des techniques faciles à comprendre. Rejoignez notre communauté
+              de gourmets et découvrez des astuces, des conseils et des recettes
+              qui égayeront vos repas au quotidien.
+            </p>
+          </div>
         </div>
-        <div class="col-md-1"></div>
-        <div class="col-md-2">
-          <img src="img/nourriture.png" href="#" class="d-block w-100" alt="nourriture">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-2">
-          <img src="/img/bouffe.png" href="#" class="d-block w-100" alt="bouffe">
-        </div>
-        <div class="col-md-1"></div>
-        <div class="col-md-9 text-justify">
-          <h2>À propos de notre passion pour la cuisine</h2>
-          <p>Nous sommes passionnés par la cuisine et le partage des bonnes recettes. Nous croyons que cuisiner doit
-            être accessible et amusant pour tous. Notre équipe teste et sélectionne chaque recette avec soin, en mettant
-            l'accent sur des ingrédients frais et des techniques faciles à comprendre. Rejoignez notre communauté de
-            gourmets et découvrez des astuces, des conseils et des recettes qui égayeront vos repas au quotidien.</p>
-        </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
-    <footer class="bg-dark text-info">
-      <p class="text-center pt-5 pb-2">
-        Alexandre Roy et Emmanuel Xudous | ©Copyright 2024 | 05B - Travail 2 | Création d'un site web
-        avec Bootstrap et design UX</p>
+    <footer class="bg-dark text-info ps-3 pe-3">
+      <p class="text-center pt-4 pb-2">
+        Alexandre Roy et Emmanuel Xudous | ©Copyright 2024 | 05B - Travail 2 |
+        Création d'un site web avec Bootstrap et design UX
+      </p>
 
-      <p class="text-center pb-2"><a class="text-decoration-none text-info"
-          href="mailto:alexandre@lacuisinecoquine.ca">alexandre@lacuisinecoquine.ca</a> | <a
+      <p class="text-center pb-2">
+        <a
           class="text-decoration-none text-info"
-          href="mailto:emmanuel@lacuisinecoquine.ca">emmanuel@lacuisinecoquine.ca</a></p>
+          href="mailto:alexandre@lacuisinecoquine.ca"
+          >alexandre@lacuisinecoquine.ca</a
+        >
+        |
+        <a
+          class="text-decoration-none text-info"
+          href="mailto:emmanuel@lacuisinecoquine.ca"
+          >emmanuel@lacuisinecoquine.ca</a
+        >
+      </p>
 
-      <p class="text-center pb-5 mb-0"><a class="text-decoration-none text-info" href="tel:+4185551234"></a>(418) 555 -
-        1234</p>
+      <ul class="text-center pb-3 mb-0">
+        <li class="d-inline-block">
+          <a class="text-decoration-none text-info" href="index.html"
+            >ACCUEIL</a
+          >
+        </li>
+        <span> | </span>
+        <li class="d-inline-block">
+          <a class="text-decoration-none text-info" href="recettes.html"
+            >RECETTES</a
+          >
+        </li>
+        <span> | </span>
+        <li class="d-inline-block">
+          <a class="text-decoration-none text-info" href="formulaire.html"
+            >FORMULAIRE</a
+          >
+        </li>
+        <span> | </span>
+        <li class="d-inline-block">
+          <a class="text-decoration-none text-info" href="#">BOUTIQUE</a>
+        </li>
+        <span> | </span>
+        <li class="d-inline-block">
+          <a class="text-decoration-none text-info" href="#">INGRÉDIENTS</a>
+        </li>
+      </ul>
 
-
-      <a class="back-to-top" href="index.html"><span class="visually-hidden">Retour en haut de la page</span><i
-          class="bi bi-arrow-bar-up fs-1"></i></a>
+      <a class="back-to-top" href="index.html"
+        ><span class="visually-hidden">Retour en haut de la page</span
+        ><i class="bi bi-arrow-bar-up fs-1 bg-body text-dark rounded-3"></i
+      ></a>
     </footer>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-      crossorigin="anonymous"></script>
-</body>
-
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
