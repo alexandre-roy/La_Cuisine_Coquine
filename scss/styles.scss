@@ -31,48 +31,18 @@ $font-family-base: "Montserrat";
   }
 }
 
-
 /*** CODE POUR LA PAGE ACCUIEL ***/
 
-.gros-carousel {
-  display: flex;
-  justify-content: center;
-  margin: 3rem 0 3rem 0;
-}
-
-.carousel {
-  display: flex;
-  justify-content: center;
-  height: 700px;
-  width: 1200px;
-  overflow: hidden;
-}
 .carousel-inner {
-  width: 700px;
-  img {
-    width: auto;
-    height: auto;
-    object-fit: cover;
-  }
-}
-.carousel-caption,
-.carousel-caption h2 {
-  position: static;
+  max-width: 70vh;
 }
 
-.carousel-item,
-.carousel-item-active {
-  height: 800px;
+.carousel-caption{
+  height: 15vh;
 }
 
-.img-carousel {
-  height: 500px !important;
-  width: 200px;
-}
-
-.carousel-control-next,
-.carousel-control-prev {
-  filter: invert(1);
+.img-carousel{
+  max-height: 70vh;
 }
 
 .text-justify {
@@ -107,5 +77,5 @@ $font-family-base: "Montserrat";
 }
 
 .card-size{
-  height: 100px;
+  height: 110px !important;
 }
