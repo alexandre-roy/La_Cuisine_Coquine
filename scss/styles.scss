@@ -22,16 +22,24 @@ $font-family-base: "Montserrat";
 /*** IMPORTATION DE BOOTSTRAP ***/
 @import "partials/bootstrap";
 
-/*** CODE POUR LE HEADER ***/
+/*** CLASSES POUR HEADER ***/
 .nav-link {
   &:hover {
     color: $secondary !important;
   }
 }
-.form-check-input:checked{
-  background-color: $secondary;
-  border-color: $secondary;
+
+.nav-custom{
+  @extend .nav-link;
+  @extend .btn;
+  @extend .btn-primary;
+  @extend .text-info;
+  @extend .me-lg-5;
+  @extend .me-md-0;
+  @extend .px-md-1;
 }
+
+/*** CLASSES POUR FOOTER ***/
 .back-to-top {
   position: fixed;
   bottom: 2rem;
@@ -40,8 +48,29 @@ $font-family-base: "Montserrat";
   color: $info;
 }
 
-/*** CODE POUR LA PAGE ACCUIEL ***/
+.nav2-custom{
+  @extend .text-decoration-none;
+  @extend .text-info;
+}
 
+/*** CLASSES POUR FORMULAIRE ***/
+.form-check-input:checked{
+  background-color: $secondary;
+  border-color: $secondary;
+}
+
+.form-input-custom{
+  @extend .form-control;
+  @extend .bg-white;
+  @extend .border-black;
+}
+
+.form-input-group-custom{
+  @extend .input-group-text;
+  @extend .border-black;
+}
+
+/*** CLASSES POUR ACCUIEL ***/
 .carousel-inner {
   max-width: 75vh;
 }
@@ -61,8 +90,8 @@ $font-family-base: "Montserrat";
 .text-justify {
   text-align: justify;
 }
-/*** CODE POUR LA PAGE RECETTES ***/
 
+/*** CLASSES POUR RECETTES ***/
 .boite-h1 {
   text-align: center;
   margin: 5rem 0 5rem 0;
@@ -80,8 +109,6 @@ $font-family-base: "Montserrat";
     transform: scale(1.1);
   }
 }
-
-
 
 .card-size{
   height: 110px !important;

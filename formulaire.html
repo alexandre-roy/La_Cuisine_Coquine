@@ -11,7 +11,11 @@
 
   <body>
     <header class="bg-secondary sticky-top">
-      <nav class="navbar navbar-expand-md">
+      <a class="visually-hidden" href="main">Contenu principal</a>
+
+      <p class="visually-hidden" id="descriptionNAV">Menu principal</p>
+
+      <nav class="navbar navbar-expand-md" aria-labelledby="descriptionNAV">
         <div
           class="container d-flex justify-content-between align-items-center"
         >
@@ -21,13 +25,16 @@
             </a>
             <h1 class="visually-hidden">La Cuisine Coquine</h1>
           </div>
-
+    
           <div class="dropdown d-md-none me-3">
+            <label for="hamburger" class="visually-hidden">Menu Hamburger</label>
             <button
+            id="hamburger"
               class="btn btn-secondary"
               type="button"
               data-bs-toggle="dropdown"
               aria-expanded="false"
+              aria-label="Menu Hamburger"
             >
               <i class="bi bi-list fs-1"></i>
             </button>
@@ -49,28 +56,28 @@
             <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll">
               <li class="nav-item">
                 <a
-                  class="nav-link btn btn-primary text-info me-lg-5 me-md-0 px-md-1"
+                  class="nav-custom"
                   href="index.html"
                   >ACCUEIL</a
                 >
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link btn btn-primary text-info me-lg-5 me-md-0 px-md-1"
+                  class="nav-custom"
                   href="recettes.html"
                   >RECETTES</a
                 >
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link btn btn-primary text-info me-lg-5 me-md-0 px-md-1"
+                  class="nav-custom"
                   href="formulaire.html"
                   >FORMULAIRE</a
                 >
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link btn btn-primary text-info me-lg-5 me-md-0 px-md-1"
+                  class="nav-custom"
                   href="#"
                   >BOUTIQUE</a
                 >
@@ -89,7 +96,10 @@
     <main>
 
       <h1 class="m-5 pt-4 fs-1 text-center pb-3">Formulaire d'évaluation d'une de nos recettes</h1>
-      <form class="rounded-3 container bg-primary p-3 text-secondary mb-5" method="get" action="confirmation.html">      
+      <p class="visually-hidden" id="descriptionFORM">
+        Formulaire pour évaluer une recette
+      </p>
+      <form class="rounded-3 container bg-primary p-3 text-secondary mb-5" method="get" action="confirmation.html" aria-labelledby="descriptionFORM">      
         <fieldset class="m-5">
           <legend class="mb-3"><strong>1. Informations personelles</strong></legend>
 
@@ -97,11 +107,11 @@
             <div class="col-lg-6">
               <label for="txtnom"><strong>Nom complet</strong></label>
               <div class="input-group">
-                <span class="input-group-text"
+                <span class="form-input-group-custom"
                   ><i class="bi bi-person"></i
                 ></span>
                 <input
-                  class="form-control"
+                  class="form-input-custom"
                   title="Votre nom complet"
                   type="text"
                   name="txtnom"
@@ -113,11 +123,11 @@
             <div class="col-lg-6">
               <label for="mailcourriel"><strong>Courriel</strong></label>
               <div class="input-group">
-                <span class="input-group-text"
+                <span class="form-input-group-custom"
                   ><i class="bi bi-envelope-at"></i
                 ></span>
                 <input
-                  class="form-control"
+                  class="form-input-custom"
                   title="Votre adresse courriel"
                   type="email"
                   name="mailcourriel"
@@ -131,11 +141,11 @@
             <div class="col-lg-6">
               <label for="txtadresse"><strong>Adresse</strong></label>
               <div class="input-group">
-                <span class="input-group-text"
+                <span class="form-input-group-custom"
                   ><i class="bi bi-house-door"></i
                 ></span>
                 <input
-                  class="form-control"
+                  class="form-input-custom"
                   title="Votre adresse"
                   type="text"
                   name="txtadresse"
@@ -149,11 +159,11 @@
                 <div class="col-6">
                   <label for="txtpostal"><strong>Code postal</strong></label>
                   <div class="input-group">
-                    <span class="input-group-text"
+                    <span class="form-input-group-custom"
                       ><i class="bi bi-buildings"></i
                     ></span>
                     <input
-                      class="form-control"
+                      class="form-input-custom"
                       title="Votre code postal"
                       type="text"
                       name="txtpostal"
@@ -165,11 +175,11 @@
                 <div class="col-6">
                   <label for="txttel"><strong>Numéro de téléphone</strong></label>
                   <div class="input-group">
-                    <span class="input-group-text"
+                    <span class="form-input-group-custom"
                       ><i class="bi bi-phone"></i
                     ></span>
                     <input
-                      class="form-control"
+                      class="form-input-custom"
                       title="Votre numéro de téléphone"
                       type="text"
                       name="txttel"
@@ -190,7 +200,7 @@
             <div class="col-lg-5 mb-3 me-5">
               <label for="selrecette" class="form-label">Recette essayée</label>
               <select
-                class="form-select"
+                class="form-select bg-white border-black"
                 name="selrecette"
                 id="selrecette"
                 required
@@ -301,7 +311,7 @@
                       id="paspire"
                       value="paspire"
                     />
-                    <label for="Pas pire">Pas pire</label>
+                    <label for="paspire">Pas pire</label>
                   </div>
 
                   <div class="form-check">
@@ -366,35 +376,37 @@
         >
       </p>
 
-      <ul class="text-center pb-3 mb-0 ps-0">
+      <p class="visually-hidden" id="descriptionNAV2">Menu Secondaire</p>
+
+      <ul class="text-center pb-3 mb-0 ps-0" aria-describedby="descriptionNAV2">
         <li class="d-inline-block">
-          <a class="text-decoration-none text-info" href="index.html"
+          <a class="nav2-custom" href="index.html"
             >ACCUEIL</a
           >
         </li>
-        <span> | </span>
+        <li class="d-inline-block"> | </li>
         <li class="d-inline-block">
-          <a class="text-decoration-none text-info" href="recettes.html"
+          <a class="nav2-custom" href="recettes.html"
             >RECETTES</a
           >
         </li>
-        <span> | </span>
+        <li class="d-inline-block"> | </li>
         <li class="d-inline-block">
-          <a class="text-decoration-none text-info" href="formulaire.html"
+          <a class="nav2-custom" href="formulaire.html"
             >FORMULAIRE</a
           >
         </li>
-        <span> | </span>
+        <li class="d-inline-block"> | </li>
         <li class="d-inline-block">
-          <a class="text-decoration-none text-info" href="#">BOUTIQUE</a>
+          <a class="nav2-custom" href="#">BOUTIQUE</a>
         </li>
-        <span> | </span>
+        <li class="d-inline-block"> | </li>
         <li class="d-inline-block">
-          <a class="text-decoration-none text-info" href="#">INGRÉDIENTS</a>
+          <a class="nav2-custom" href="#">INGRÉDIENTS</a>
         </li>
       </ul>
 
-      <a class="back-to-top" href="formulaire.html"
+      <a class="back-to-top" href="index.html"
         ><span class="visually-hidden">Retour en haut de la page</span
         ><i class="bi bi-arrow-bar-up fs-1 text-light"></i
       ></a>

@@ -11,7 +11,11 @@
 
   <body>
     <header class="bg-secondary sticky-top">
-      <nav class="navbar navbar-expand-md">
+      <a class="visually-hidden" href="main">Contenu principal</a>
+
+      <p class="visually-hidden" id="descriptionNAV">Menu principal</p>
+
+      <nav class="navbar navbar-expand-md" aria-labelledby="descriptionNAV">
         <div
           class="container d-flex justify-content-between align-items-center"
         >
@@ -21,13 +25,16 @@
             </a>
             <h1 class="visually-hidden">La Cuisine Coquine</h1>
           </div>
-
+    
           <div class="dropdown d-md-none me-3">
+            <label for="hamburger" class="visually-hidden">Menu Hamburger</label>
             <button
+            id="hamburger"
               class="btn btn-secondary"
               type="button"
               data-bs-toggle="dropdown"
               aria-expanded="false"
+              aria-label="Menu Hamburger"
             >
               <i class="bi bi-list fs-1"></i>
             </button>
@@ -49,28 +56,28 @@
             <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll">
               <li class="nav-item">
                 <a
-                  class="nav-link btn btn-primary text-info me-lg-5 me-md-0 px-md-1"
+                  class="nav-custom"
                   href="index.html"
                   >ACCUEIL</a
                 >
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link btn btn-primary text-info me-lg-5 me-md-0 px-md-1"
+                  class="nav-custom"
                   href="recettes.html"
                   >RECETTES</a
                 >
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link btn btn-primary text-info me-lg-5 me-md-0 px-md-1"
+                  class="nav-custom"
                   href="formulaire.html"
                   >FORMULAIRE</a
                 >
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link btn btn-primary text-info me-lg-5 me-md-0 px-md-1"
+                  class="nav-custom"
                   href="#"
                   >BOUTIQUE</a
                 >
@@ -184,35 +191,37 @@
         >
       </p>
 
-      <ul class="text-center pb-3 mb-0 ps-0">
+      <p class="visually-hidden" id="descriptionNAV2">Menu Secondaire</p>
+
+      <ul class="text-center pb-3 mb-0 ps-0" aria-describedby="descriptionNAV2">
         <li class="d-inline-block">
-          <a class="text-decoration-none text-info" href="index.html"
+          <a class="nav2-custom" href="index.html"
             >ACCUEIL</a
           >
         </li>
-        <span> | </span>
+        <li class="d-inline-block"> | </li>
         <li class="d-inline-block">
-          <a class="text-decoration-none text-info" href="recettes.html"
+          <a class="nav2-custom" href="recettes.html"
             >RECETTES</a
           >
         </li>
-        <span> | </span>
+        <li class="d-inline-block"> | </li>
         <li class="d-inline-block">
-          <a class="text-decoration-none text-info" href="formulaire.html"
+          <a class="nav2-custom" href="formulaire.html"
             >FORMULAIRE</a
           >
         </li>
-        <span> | </span>
+        <li class="d-inline-block"> | </li>
         <li class="d-inline-block">
-          <a class="text-decoration-none text-info" href="#">BOUTIQUE</a>
+          <a class="nav2-custom" href="#">BOUTIQUE</a>
         </li>
-        <span> | </span>
+        <li class="d-inline-block"> | </li>
         <li class="d-inline-block">
-          <a class="text-decoration-none text-info" href="#">INGRÉDIENTS</a>
+          <a class="nav2-custom" href="#">INGRÉDIENTS</a>
         </li>
       </ul>
 
-      <a class="back-to-top" href="recettes"
+      <a class="back-to-top" href="index.html"
         ><span class="visually-hidden">Retour en haut de la page</span
         ><i class="bi bi-arrow-bar-up fs-1 text-light"></i
       ></a>
