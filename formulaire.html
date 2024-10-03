@@ -87,13 +87,14 @@
     </header>
 
     <main>
-      <form class="container bg-primary p-3 text-secondary" method="post">
+      <form class="container bg-primary p-3 text-secondary" method="get" action="confirmation.html">
+        <h1 class="mx-5 mb-5 fs-1 text-center pt-5 pb-3">Formulaire d'évaluation d'une de nos recettes</h1>
         <fieldset class="m-5">
-          <legend>1. Informations personelles</legend>
+          <legend class="mb-3"><strong>1. Informations personelles</strong></legend>
 
           <div class="row mb-3">
-            <div class="col-6">
-              <label for="txtnom">Nom complet</label>
+            <div class="col-lg-6">
+              <label for="txtnom"><strong>Nom complet</strong></label>
               <div class="input-group">
                 <span class="input-group-text"
                   ><i class="bi bi-person"></i
@@ -108,8 +109,8 @@
                 />
               </div>
             </div>
-            <div class="col-6">
-              <label for="mailcourriel">Courriel</label>
+            <div class="col-lg-6">
+              <label for="mailcourriel"><strong>Courriel</strong></label>
               <div class="input-group">
                 <span class="input-group-text"
                   ><i class="bi bi-envelope-at"></i
@@ -126,8 +127,8 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-6">
-              <label for="txtadresse">Adresse</label>
+            <div class="col-lg-6">
+              <label for="txtadresse"><strong>Adresse</strong></label>
               <div class="input-group">
                 <span class="input-group-text"
                   ><i class="bi bi-house-door"></i
@@ -142,45 +143,50 @@
                 />
               </div>
             </div>
-            <div class="col-3">
-              <label for="txtpostal">Code postal</label>
-              <div class="input-group">
-                <span class="input-group-text"
-                  ><i class="bi bi-buildings"></i
-                ></span>
-                <input
-                  class="form-control"
-                  title="Votre code postal"
-                  type="text"
-                  name="txtpostal"
-                  id="txtpostal"
-                  required
-                />
-              </div>
-            </div>
-            <div class="col-3">
-              <label for="txttel">Numéro de téléphone</label>
-              <div class="input-group">
-                <span class="input-group-text"
-                  ><i class="bi bi-phone"></i
-                ></span>
-                <input
-                  class="form-control"
-                  title="Votre numéro de téléphone"
-                  type="text"
-                  name="txttel"
-                  id="txttel"
-                  required
-                />
+            <div class="col-lg-6">
+              <div class="row">
+                <div class="col-6">
+                  <label for="txtpostal"><strong>Code postal</strong></label>
+                  <div class="input-group">
+                    <span class="input-group-text"
+                      ><i class="bi bi-buildings"></i
+                    ></span>
+                    <input
+                      class="form-control"
+                      title="Votre code postal"
+                      type="text"
+                      name="txtpostal"
+                      id="txtpostal"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-6">
+                  <label for="txttel"><strong>Numéro de téléphone</strong></label>
+                  <div class="input-group">
+                    <span class="input-group-text"
+                      ><i class="bi bi-phone"></i
+                    ></span>
+                    <input
+                      class="form-control"
+                      title="Votre numéro de téléphone"
+                      type="text"
+                      name="txttel"
+                      id="txttel"
+                      required
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </fieldset>
 
-        <fieldset class="m-5">
-          <legend>2. Évaluation d'une recette</legend>
-          <div class="row m-3">
-            <div class="col-5">
+        <fieldset class="mx-5 mt-5 mb-2">
+          <legend class="mb-3"><strong>2. Évaluation d'une recette</strong></legend>
+
+          <div class="row">
+            <div class="col-lg-5 mb-3 me-5">
               <label for="selrecette" class="form-label">Recette essayée</label>
               <select
                 class="form-select"
@@ -199,123 +205,127 @@
                 <option value="skib">Bol de riz avec porc</option>
               </select>
             </div>
-          </div>
 
-          <div>
-            <p>Goût de la recette</p>
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="eval"
-                id="super"
-                value="super"
-                checked
-              />
-              <label for="super">Superbe!</label>
-            </div>
+            <div class="col-lg-6">
+              <div class="row">
+                <div class="col-6">
+                  <p class="mb-1"><strong>Goût de la recette</strong></p>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="eval"
+                      id="super"
+                      value="super"
+                      checked
+                    />
+                    <label for="super">Superbe!</label>
+                  </div>
 
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="eval"
-                id="tresbonne"
-                value="tresbonne"
-              />
-              <label for="tresbonne">Très bonne!</label>
-            </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="eval"
+                      id="tresbonne"
+                      value="tresbonne"
+                    />
+                    <label for="tresbonne">Très bonne!</label>
+                  </div>
 
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="eval"
-                id="correct"
-                value="correct"
-              />
-              <label for="correct">Correct</label>
-            </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="eval"
+                      id="correct"
+                      value="correct"
+                    />
+                    <label for="correct">Correct</label>
+                  </div>
 
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="eval"
-                id="bof"
-                value="bof"
-              />
-              <label for="bof">Bof</label>
-            </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="eval"
+                      id="bof"
+                      value="bof"
+                    />
+                    <label for="bof">Bof</label>
+                  </div>
 
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="eval"
-                id="ark"
-                value="ark"
-              />
-              <label for="ark">Dégeu!</label>
-            </div>
-          </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="eval"
+                      id="ark"
+                      value="ark"
+                    />
+                    <label for="ark">Dégeu!</label>
+                  </div>
+                </div>
 
-          <div>
-            <p>Difficulté de la préparation</p>
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="eval2"
-                id="facile"
-                value="facile"
-                checked
-              />
-              <label for="facile">Facile</label>
-            </div>
+                <div class="col-6">
+                  <p class="mb-1"><strong>Difficulté de la préparation</strong></p>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="eval2"
+                      id="facile"
+                      value="facile"
+                      checked
+                    />
+                    <label for="facile">Facile</label>
+                  </div>
 
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="eval2"
-                id="assezsimple"
-                value="assezsimple"
-              />
-              <label for="assezsimple">Assez simple</label>
-            </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="eval2"
+                      id="assezsimple"
+                      value="assezsimple"
+                    />
+                    <label for="assezsimple">Assez simple</label>
+                  </div>
 
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="eval2"
-                id="paspire"
-                value="paspire"
-              />
-              <label for="Pas pire">Pas pire</label>
-            </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="eval2"
+                      id="paspire"
+                      value="paspire"
+                    />
+                    <label for="Pas pire">Pas pire</label>
+                  </div>
 
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="eval2"
-                id="assezdifficile"
-                value="assezdifficile"
-              />
-              <label for="assezdifficile">Assez Difficile</label>
-            </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="eval2"
+                      id="assezdifficile"
+                      value="assezdifficile"
+                    />
+                    <label for="assezdifficile">Assez Difficile</label>
+                  </div>
 
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="eval2"
-                id="complique"
-                value="complique"
-              />
-              <label for="complique">Compliqué</label>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="eval2"
+                      id="complique"
+                      value="complique"
+                    />
+                    <label for="complique">Compliqué</label>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </fieldset>
@@ -355,7 +365,7 @@
         >
       </p>
 
-      <ul class="text-center pb-3 mb-0">
+      <ul class="text-center pb-3 mb-0 ps-0">
         <li class="d-inline-block">
           <a class="text-decoration-none text-info" href="index.html"
             >ACCUEIL</a
@@ -383,7 +393,7 @@
         </li>
       </ul>
 
-      <a class="back-to-top" href="index.html"
+      <a class="back-to-top" href="formulaire.html"
         ><span class="visually-hidden">Retour en haut de la page</span
         ><i class="bi bi-arrow-bar-up fs-1 text-light"></i
       ></a>
