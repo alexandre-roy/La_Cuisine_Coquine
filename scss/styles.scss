@@ -43,15 +43,19 @@ $font-family-base: "Montserrat";
 /*** CODE POUR LA PAGE ACCUIEL ***/
 
 .carousel-inner {
-  max-width: 70vh;
+  max-width: 75vh;
 }
 
 .carousel-caption{
-  height: 15vh;
+  height: 18vh;
+}
+
+.carousel-control-next, .carousel-control-prev{
+  filter: invert(1);
 }
 
 .img-carousel{
-  max-height: 70vh;
+  max-height: 75vh;
 }
 
 .text-justify {
