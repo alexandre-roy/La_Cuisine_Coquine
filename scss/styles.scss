@@ -22,6 +22,11 @@ $font-family-base: "Montserrat";
 /*** IMPORTATION DE BOOTSTRAP ***/
 @import "partials/bootstrap";
 
+/*** CLASSES GENERALES ***/
+.text-justify {
+  text-align: justify;
+}
+
 /*** CLASSES POUR HEADER ***/
 .nav-link {
   &:hover {
@@ -76,7 +81,7 @@ $font-family-base: "Montserrat";
 }
 
 .carousel-caption{
-  height: 18vh;
+  height: 15vh;
 }
 
 .carousel-control-next, .carousel-control-prev{
@@ -87,22 +92,13 @@ $font-family-base: "Montserrat";
   max-height: 75vh;
 }
 
-.text-justify {
-  text-align: justify;
-}
-
 /*** CLASSES POUR RECETTES ***/
-.boite-h1 {
-  text-align: center;
-  margin: 5rem 0 5rem 0;
-}
+
 .img-container,
 .card {
   overflow: hidden;
 }
-.card {
-  margin-bottom: 30px;
-}
+
 .zoom {
   transition: transform 0.3s ease;
   &:hover {
@@ -111,5 +107,5 @@ $font-family-base: "Montserrat";
 }
 
 .card-size{
-  height: 110px !important;
+  height: 120px !important;
 }
