@@ -1,203 +1,253 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="favicon.ico" />
+    <title>La Cuisine Coquine | Recettes</title>
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="icon" href="favicon.ico" />
-  <title>La Cuisine Coquine | Recettes</title>
-</head>
+  <body>
+    <a class="visually-hidden" href="#navigation">Passer à la navigation</a>
+    <a class="visually-hidden" href="#recettes">Passer aux recettes vedettes</a>
 
-<body>
+    <header class="bg-secondary sticky-top">
+      <a class="visually-hidden" href="main">Contenu principal</a>
 
-  <a class="visually-hidden" href="#navigation">Passer à la navigation</a>
-  <a class="visually-hidden" href="#recettes">Passer aux recettes vedettes</a>
+      <p class="visually-hidden" id="descriptionNAV">Menu principal</p>
 
-  <header class="bg-secondary sticky-top">
-    <a class="visually-hidden" href="main">Contenu principal</a>
+      <nav
+        class="navbar navbar-expand-md"
+        aria-labelledby="descriptionNAV"
+        id="navigation"
+      >
+        <div
+          class="container d-flex justify-content-between align-items-center"
+        >
+          <div>
+            <a class="navbar-brand" href="index.html">
+              <img src="img/logo.png" alt="logo" width="175" />
+            </a>
+            <h1 class="visually-hidden">La Cuisine Coquine</h1>
+          </div>
 
-    <p class="visually-hidden" id="descriptionNAV">Menu principal</p>
+          <div class="dropdown d-md-none me-3">
+            <label for="hamburger" class="visually-hidden"
+              >Menu Hamburger</label
+            >
+            <button
+              id="hamburger"
+              class="btn btn-secondary"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              aria-label="Menu Hamburger"
+            >
+              <i class="bi bi-list fs-1"></i>
+            </button>
 
-    <nav class="navbar navbar-expand-md" aria-labelledby="descriptionNAV" id="navigation">
-      <div class="container d-flex justify-content-between align-items-center">
-        <div>
-          <a class="navbar-brand" href="index.html">
-            <img src="img/logo.png" alt="logo" width="175" />
-          </a>
-          <h1 class="visually-hidden">La Cuisine Coquine</h1>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="index.html">ACCUEIL</a></li>
+              <li>
+                <a class="dropdown-item" href="recettes.html">RECETTES</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="formulaire.html">FORMULAIRE</a>
+              </li>
+              <li><a class="dropdown-item" href="#">BOUTIQUE</a></li>
+              <li><a class="dropdown-item" href="#">INGRÉDIENTS</a></li>
+            </ul>
+          </div>
+
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll">
+              <li class="nav-item">
+                <a class="nav-custom" href="index.html">ACCUEIL</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-custom" href="recettes.html">RECETTES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-custom" href="formulaire.html">FORMULAIRE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-custom" href="#">BOUTIQUE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn btn-primary text-info" href="#"
+                  >INGRÉDIENTS</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
+      </nav>
+    </header>
 
-        <div class="dropdown d-md-none me-3">
-          <label for="hamburger" class="visually-hidden">Menu Hamburger</label>
-          <button id="hamburger" class="btn btn-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false"
-            aria-label="Menu Hamburger">
-            <i class="bi bi-list fs-1"></i>
-          </button>
-
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="index.html">ACCUEIL</a></li>
-            <li>
-              <a class="dropdown-item" href="recettes.html">RECETTES</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="formulaire.html">FORMULAIRE</a>
-            </li>
-            <li><a class="dropdown-item" href="#">BOUTIQUE</a></li>
-            <li><a class="dropdown-item" href="#">INGRÉDIENTS</a></li>
-          </ul>
+    <main id="recettes">
+      <section class="container mt-4">
+        <div class="text-center my-5">
+          <h1>Nos recettes vedettes</h1>
         </div>
-
-        <div class="collapse navbar-collapse">
-          <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll">
-            <li class="nav-item">
-              <a class="nav-custom" href="index.html">ACCUEIL</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-custom" href="recettes.html">RECETTES</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-custom" href="formulaire.html">FORMULAIRE</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-custom" href="#">BOUTIQUE</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link btn btn-primary text-info" href="#">INGRÉDIENTS</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  <main id="recettes">
-    <section class="container mt-4">
-      <div class="text-center my-5 ">
-        <h1> Nos recettes vedettes</h1>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-md-4 col-sm-6 col-10">
-          <div class="card mb-5">
-            <div class="img-container">
-              <img src="img/burger.jpg" class="card-img-top zoom" alt="Burger">
+        <div class="row justify-content-center">
+          <div class="col-md-4 col-sm-6 col-10">
+            <div class="card mb-5">
+              <div class="img-container">
+                <img
+                  src="img/burger.jpg"
+                  class="card-img-top zoom"
+                  alt="Burger"
+                />
+              </div>
+              <div class="card-body card-size">
+                <h5 class="card-title">Burger Classique</h5>
+                <p class="card-text">Un burger juteux avec une sauce maison</p>
+              </div>
             </div>
-            <div class="card-body card-size">
-              <h5 class="card-title">Burger Classique</h5>
-              <p class="card-text">Un burger juteux avec une sauce maison</p>
+          </div>
+          <div class="col-md-4 col-sm-6 col-10">
+            <div class="card mb-5">
+              <div class="img-container">
+                <img
+                  src="img/fruitsdm.jpg"
+                  class="card-img-top zoom"
+                  alt="Soupe aux fruits de mer"
+                />
+              </div>
+              <div class="card-body card-size">
+                <h5 class="card-title">Soupe aux fruits de mer</h5>
+                <p class="card-text">Une excellente soupe marinière</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-10">
+            <div class="card mb-5">
+              <div class="img-container">
+                <img
+                  src="img/oeufbacon.jpg"
+                  class="card-img-top zoom"
+                  alt="sourire matinal"
+                />
+              </div>
+              <div class="card-body card-size">
+                <h5 class="card-title">Sourire matinal</h5>
+                <p class="card-text">Oeuf et bacon cuits à la perfection</p>
+              </div>
+            </div>
+          </div>
+          <div class="w-100 d-sm-none"></div>
+          <div class="col-md-4 col-sm-6 col-10">
+            <div class="card mb-5">
+              <div class="img-container">
+                <img
+                  src="img/salade.jpg"
+                  class="card-img-top zoom"
+                  alt="salade grecque"
+                />
+              </div>
+              <div class="card-body card-size">
+                <h5 class="card-title">Salade skibidi-grecque</h5>
+                <p class="card-text">La salade grecque par excellence</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-10">
+            <div class="card mb-5">
+              <div class="img-container">
+                <img
+                  src="img/dumplings.jpg"
+                  class="card-img-top zoom"
+                  alt="dumplings"
+                />
+              </div>
+              <div class="card-body card-size">
+                <h5 class="card-title">Dumplings Dumbledore</h5>
+                <p class="card-text">Des dumplings magiquement délicieux</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-10">
+            <div class="card mb-5">
+              <div class="img-container">
+                <img
+                  src="img/porcriz.jpg"
+                  class="card-img-top zoom"
+                  alt="bol riz avec porc"
+                />
+              </div>
+              <div class="card-body card-size">
+                <h5 class="card-title">Bol de riz avec porc</h5>
+                <p class="card-text">
+                  Un bol de riz avec porc qui goûte vachement bon
+                </p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-md-4 col-sm-6 col-10">
-          <div class="card mb-5">
-            <div class="img-container">
-              <img src="img/fruitsdm.jpg" class="card-img-top zoom" alt="Soupe aux fruits de mer">
-            </div>
-            <div class="card-body card-size">
-              <h5 class="card-title">Soupe aux fruits de mer</h5>
-              <p class="card-text">Une excellente soupe marinière</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 col-10">
-          <div class="card mb-5">
-            <div class="img-container">
-              <img src="img/oeufbacon.jpg" class="card-img-top zoom" alt="sourire matinal">
-            </div>
-            <div class="card-body card-size">
-              <h5 class="card-title">Sourire matinal</h5>
-              <p class="card-text">Oeuf et bacon cuits à la perfection</p>
-            </div>
-          </div>
-        </div>
-        <div class="w-100 d-sm-none">
-        </div>
-        <div class="col-md-4 col-sm-6 col-10">
-          <div class="card mb-5">
-            <div class="img-container">
-              <img src="img/salade.jpg" class="card-img-top zoom" alt="salade grecque">
-            </div>
-            <div class="card-body card-size">
-              <h5 class="card-title">Salade skibidi-grecque</h5>
-              <p class="card-text">La salade grecque par excellence</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 col-10">
-          <div class="card mb-5">
-            <div class="img-container">
-              <img src="img/dumplings.jpg" class="card-img-top zoom" alt="dumplings">
-            </div>
-            <div class="card-body card-size">
-              <h5 class="card-title">Dumplings Dumbledore</h5>
-              <p class="card-text">Des dumplings magiquement délicieux</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 col-10">
-          <div class="card mb-5">
-            <div class="img-container">
-              <img src="img/porcriz.jpg" class="card-img-top zoom" alt="bol riz avec porc">
-            </div>
-            <div class="card-body card-size">
-              <h5 class="card-title">Bol de riz avec porc</h5>
-              <p class="card-text">Un bol de riz avec porc qui goûte vachement bon</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
+      </section>
+    </main>
 
-  <footer class="bg-dark text-info ps-3 pe-3">
-    <p class="text-center pt-4 pb-2">
-      Alexandre Roy et Emmanuel Xudous | ©Copyright 2024 | 05B - Travail 2 |
-      Création d'un site web avec Bootstrap et design UX
-    </p>
+    <footer class="bg-dark text-info ps-3 pe-3">
+      <p class="text-center pt-4 pb-2">
+        Alexandre Roy et Emmanuel Xudous | ©Copyright 2024 | 05B - Travail 2 |
+        Création d'un site web avec Bootstrap et design UX
+      </p>
 
-    <p class="text-center pb-2">
-      <a class="text-decoration-none text-info"
-        href="mailto:alexandre@lacuisinecoquine.ca">alexandre@lacuisinecoquine.ca</a>
-      |
-      <a class="text-decoration-none text-info"
-        href="mailto:emmanuel@lacuisinecoquine.ca">emmanuel@lacuisinecoquine.ca</a>
-    </p>
+      <p class="text-center pb-2">
+        <a
+          class="text-decoration-none text-info"
+          href="mailto:alexandre@lacuisinecoquine.ca"
+          >alexandre@lacuisinecoquine.ca</a
+        >
+        |
+        <a
+          class="text-decoration-none text-info"
+          href="mailto:emmanuel@lacuisinecoquine.ca"
+          >emmanuel@lacuisinecoquine.ca</a
+        >
+      </p>
 
-    <p class="visually-hidden" id="descriptionNAV2">Menu Secondaire</p>
+      <p class="visually-hidden" id="descriptionNAV2">Menu Secondaire</p>
 
-    <ul class="text-center pb-3 mb-0 ps-0" aria-describedby="descriptionNAV2">
-      <li class="d-inline-block">
-        <a class="nav2-custom" href="index.html">ACCUEIL</a>
-      </li>
-      <li class="d-inline-block"> | </li>
-      <li class="d-inline-block">
-        <a class="nav2-custom" href="recettes.html">RECETTES</a>
-      </li>
-      <li class="d-inline-block"> | </li>
-      <li class="d-inline-block">
-        <a class="nav2-custom" href="formulaire.html">FORMULAIRE</a>
-      </li>
-      <li class="d-inline-block"> | </li>
-      <li class="d-inline-block">
-        <a class="nav2-custom" href="#">BOUTIQUE</a>
-      </li>
-      <li class="d-inline-block"> | </li>
-      <li class="d-inline-block">
-        <a class="nav2-custom" href="#">INGRÉDIENTS</a>
-      </li>
-    </ul>
+      <ul class="text-center pb-3 mb-0 ps-0" aria-describedby="descriptionNAV2">
+        <li class="d-inline-block">
+          <a class="nav2-custom" href="index.html">ACCUEIL</a>
+        </li>
+        <li class="d-inline-block">|</li>
+        <li class="d-inline-block">
+          <a class="nav2-custom" href="recettes.html">RECETTES</a>
+        </li>
+        <li class="d-inline-block">|</li>
+        <li class="d-inline-block">
+          <a class="nav2-custom" href="formulaire.html">FORMULAIRE</a>
+        </li>
+        <li class="d-inline-block">|</li>
+        <li class="d-inline-block">
+          <a class="nav2-custom" href="#">BOUTIQUE</a>
+        </li>
+        <li class="d-inline-block">|</li>
+        <li class="d-inline-block">
+          <a class="nav2-custom" href="#">INGRÉDIENTS</a>
+        </li>
+      </ul>
 
-    <a class="back-to-top" href="index.html"><span class="visually-hidden">Retour en haut de la page</span><i
-        class="bi bi-arrow-bar-up fs-1 text-light"></i></a>
-  </footer>
+      <a class="back-to-top" href="index.html"
+        ><span class="visually-hidden">Retour en haut de la page</span
+        ><i class="bi bi-arrow-bar-up fs-1 text-light"></i
+      ></a>
+    </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-    crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

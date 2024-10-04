@@ -1,234 +1,321 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="favicon.ico" />
+    <title>La Cuisine Coquine | Accueil</title>
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="icon" href="favicon.ico" />
-  <title>La Cuisine Coquine | Accueil</title>
-</head>
+  <body>
+    <a class="visually-hidden" href="#navigation">Passer à la navigation</a>
+    <a class="visually-hidden" href="#carousel">Passer au carousel d'images</a>
+    <a class="visually-hidden" href="#presentation"
+      >Passer à la présentation du site
+    </a>
 
-<body>
-  
-  <a class="visually-hidden" href="#navigation">Passer à la navigation</a>
-  <a class="visually-hidden" href="#carousel">Passer au carousel d'images</a>
-  <a class="visually-hidden" href="#presentation">Passer à la présentation du site </a>
+    <header class="bg-secondary sticky-top">
+      <a class="visually-hidden" href="main">Contenu principal</a>
 
-  <header class="bg-secondary sticky-top">
-    <a class="visually-hidden" href="main">Contenu principal</a>
+      <p class="visually-hidden" id="descriptionNAV">Menu principal</p>
 
-    <p class="visually-hidden" id="descriptionNAV">Menu principal</p>
+      <nav
+        class="navbar navbar-expand-md"
+        aria-labelledby="descriptionNAV"
+        id="navigation"
+      >
+        <div
+          class="container d-flex justify-content-between align-items-center"
+        >
+          <div>
+            <a class="navbar-brand" href="index.html">
+              <img src="img/logo.png" alt="logo" width="175" />
+            </a>
+            <h1 class="visually-hidden">La Cuisine Coquine</h1>
+          </div>
 
-    <nav  class="navbar navbar-expand-md" aria-labelledby="descriptionNAV" id="navigation">
-      <div class="container d-flex justify-content-between align-items-center">
-        <div>
-          <a class="navbar-brand" href="index.html">
-            <img src="img/logo.png" alt="logo" width="175" />
-          </a>
-          <h1 class="visually-hidden">La Cuisine Coquine</h1>
+          <div class="dropdown d-md-none me-3">
+            <label for="hamburger" class="visually-hidden"
+              >Menu Hamburger</label
+            >
+            <button
+              id="hamburger"
+              class="btn btn-secondary"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              aria-label="Menu Hamburger"
+            >
+              <i class="bi bi-list fs-1"></i>
+            </button>
+
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="index.html">ACCUEIL</a></li>
+              <li>
+                <a class="dropdown-item" href="recettes.html">RECETTES</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="formulaire.html">FORMULAIRE</a>
+              </li>
+              <li><a class="dropdown-item" href="#">BOUTIQUE</a></li>
+              <li><a class="dropdown-item" href="#">INGRÉDIENTS</a></li>
+            </ul>
+          </div>
+
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll">
+              <li class="nav-item">
+                <a class="nav-custom" href="index.html">ACCUEIL</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-custom" href="recettes.html">RECETTES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-custom" href="formulaire.html">FORMULAIRE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-custom" href="#">BOUTIQUE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn btn-primary text-info" href="#"
+                  >INGRÉDIENTS</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
+      </nav>
+    </header>
 
-        <div class="dropdown d-md-none me-3">
-          <label for="hamburger" class="visually-hidden">Menu Hamburger</label>
-          <button id="hamburger" class="btn btn-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false"
-            aria-label="Menu Hamburger">
-            <i class="bi bi-list fs-1"></i>
+    <main>
+      <section class="gros-carousel d-flex justify-content-center mt-4 mb-4">
+        <div class="carousel d-flex justify-content-center slide" id="carousel">
+          <div class="carousel-inner rounded border-black border border-2 w-75">
+            <div class="carousel-item active">
+              <a href="#"
+                ><img
+                  src="img/burger.jpg"
+                  class="d-block w-100 img-carousel h-auto"
+                  alt="burger"
+              /></a>
+              <div
+                class="carousel-caption bg-primary text-secondary position-static"
+              >
+                <h2 class="text-secondary fs-1 position-static">
+                  Burger Classique
+                </h2>
+                <p>
+                  Un burger juteux avec des ingrédients frais et une sauce
+                  maison
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <a href="#"
+                ><img
+                  src="img/fruitsdm.jpg"
+                  class="d-block w-100 img-carousel h-auto"
+                  alt="soupefdm"
+              /></a>
+              <div
+                class="carousel-caption bg-primary text-secondary position-static"
+              >
+                <h2 class="text-secondary fs-1 position-static">
+                  Soupe aux fruits de mer
+                </h2>
+                <p>Une excellente soupe marinière</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <a href="#"
+                ><img
+                  src="img/oeufbacon.jpg"
+                  class="d-block w-100 img-carousel h-auto"
+                  alt="oeufbacon"
+              /></a>
+              <div
+                class="carousel-caption bg-primary text-secondary position-static"
+              >
+                <h2 class="text-secondary fs-1 position-static">
+                  Sourire du matin
+                </h2>
+                <p>Oeuf et bacon cuits à la perfection</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <a href="#"
+                ><img
+                  src="img/salade.jpg"
+                  class="d-block w-100 img-carousel h-auto"
+                  alt="salade"
+              /></a>
+              <div
+                class="carousel-caption bg-primary text-secondary position-static"
+              >
+                <h2 class="text-secondary fs-1 position-static">
+                  Salade skibidi-grecque
+                </h2>
+                <p>La salade grecque par excellence</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <a href="#"
+                ><img
+                  src="img/dumplings.jpg"
+                  class="d-block w-100 img-carousel h-auto"
+                  alt="oeufbacon"
+              /></a>
+              <div
+                class="carousel-caption bg-primary text-secondary position-static"
+              >
+                <h2 class="text-secondary fs-1 position-static">
+                  Dumplings Dumbledore
+                </h2>
+                <p>Des dumplings magiquement délicieux</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <a href="#"
+                ><img
+                  src="img/porcriz.jpg"
+                  class="d-block w-100 img-carousel h-auto"
+                  alt="oeufbacon"
+              /></a>
+              <div
+                class="carousel-caption bg-primary text-secondary position-static"
+              >
+                <h2 class="text-secondary fs-1 position-static">
+                  Bol de riz avec porc
+                </h2>
+                <p>Un bol de riz avec porc qui goûte vachement bon</p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
           </button>
-
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="index.html">ACCUEIL</a></li>
-            <li>
-              <a class="dropdown-item" href="recettes.html">RECETTES</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="formulaire.html">FORMULAIRE</a>
-            </li>
-            <li><a class="dropdown-item" href="#">BOUTIQUE</a></li>
-            <li><a class="dropdown-item" href="#">INGRÉDIENTS</a></li>
-          </ul>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-
-        <div class="collapse navbar-collapse">
-          <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll">
-            <li class="nav-item">
-              <a class="nav-custom" href="index.html">ACCUEIL</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-custom" href="recettes.html">RECETTES</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-custom" href="formulaire.html">FORMULAIRE</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-custom" href="#">BOUTIQUE</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link btn btn-primary text-info" href="#">INGRÉDIENTS</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  <main>
-    <section class="gros-carousel d-flex justify-content-center mt-4 mb-4">
-      <div class="carousel d-flex justify-content-center slide"  id="carousel" >
-        <div class="carousel-inner rounded border-black border border-2 w-75">
-          <div class="carousel-item active">
-            <a href="recettes.html"><img src="img/burger.jpg" class="d-block w-100 img-carousel h-auto"
-                alt="burger" /></a>
-            <div class="carousel-caption bg-primary text-secondary position-static">
-              <h2 class="text-secondary fs-1 position-static">Burger Classique</h2>
-              <p>
-                Un burger juteux avec des ingrédients frais et une sauce
-                maison
-              </p>
-            </div>
+      </section>
+      <section class="container my-5" id="presentation">
+        <div class="row">
+          <div class="col-md-9 col-sm-12 p-4 p-sm-0">
+            <h2>Bienvenue dans La Cuisine Coquine !</h2>
+            <p class="text-justify">
+              Explorez un monde de saveurs et de créativité culinaire avec nos
+              délicieuses recettes. Que vous soyez un cuisinier débutant ou un
+              chef expérimenté, notre collection variée de recettes vous
+              inspirera à préparer des plats savoureux et originaux. Des entrées
+              aux desserts, chaque recette est conçue pour être simple à suivre
+              et pleine de goût. Prêt à mettre votre tablier et à vous lancer en
+              cuisine ?
+            </p>
           </div>
-          <div class="carousel-item">
-            <a href="recettes.html"><img src="img/fruitsdm.jpg" class="d-block w-100 img-carousel h-auto"
-                alt="soupefdm" /></a>
-            <div class="carousel-caption bg-primary text-secondary position-static">
-              <h2 class="text-secondary fs-1 position-static">Soupe aux fruits de mer</h2>
-              <p>Une excellente soupe marinière</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <a href="recettes.html"><img src="img/oeufbacon.jpg" class="d-block w-100 img-carousel h-auto"
-                alt="oeufbacon" /></a>
-            <div class="carousel-caption bg-primary text-secondary position-static">
-              <h2 class="text-secondary fs-1 position-static">Sourire du matin</h2>
-              <p>Oeuf et bacon cuits à la perfection</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <a href="recettes.html"><img src="img/salade.jpg" class="d-block w-100 img-carousel h-auto"
-                alt="salade" /></a>
-            <div class="carousel-caption bg-primary text-secondary position-static">
-              <h2 class="text-secondary fs-1 position-static">Salade skibidi-grecque</h2>
-              <p>La salade grecque par excellence</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <a href="recettes.html"><img src="img/dumplings.jpg" class="d-block w-100 img-carousel h-auto"
-                alt="oeufbacon" /></a>
-            <div class="carousel-caption bg-primary text-secondary position-static">
-              <h2 class="text-secondary fs-1 position-static">Dumplings Dumbledore</h2>
-              <p>Des dumplings magiquement délicieux</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <a href="recettes.html"><img src="img/porcriz.jpg" class="d-block w-100 img-carousel h-auto"
-                alt="oeufbacon" /></a>
-            <div class="carousel-caption bg-primary text-secondary position-static">
-              <h2 class="text-secondary fs-1 position-static">Bol de riz avec porc</h2>
-              <p>
-                Un bol de riz avec porc qui goûte vachement bon
-              </p>
-            </div>
+          <div class="col-md-1 d-sm-none d-md-block d-none"></div>
+          <div class="col-md-2 d-sm-none d-md-block d-none">
+            <img
+              src="img/nourriture.png"
+              class="d-block w-100"
+              alt="nourriture"
+            />
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </section>
-    <section  class="container my-5" id="presentation">
-      <div class="row">
-        <div class="col-md-9 col-sm-12 p-4 p-sm-0">
-          <h2>Bienvenue dans La Cuisine Coquine !</h2>
-          <p class="text-justify ">
-            Explorez un monde de saveurs et de créativité culinaire avec nos
-            délicieuses recettes. Que vous soyez un cuisinier débutant ou un
-            chef expérimenté, notre collection variée de recettes vous
-            inspirera à préparer des plats savoureux et originaux. Des entrées
-            aux desserts, chaque recette est conçue pour être simple à suivre
-            et pleine de goût. Prêt à mettre votre tablier et à vous lancer en
-            cuisine ?
-          </p>
+        <div class="row">
+          <div class="col-md-2 d-sm-none d-md-block d-none">
+            <img src="/img/bouffe.png" class="d-block w-100" alt="bouffe" />
+          </div>
+          <div class="col-md-1 d-sm-none d-md-block d-none"></div>
+          <div class="col-md-9 p-4 p-sm-0">
+            <h2>À propos de notre passion pour la cuisine</h2>
+            <p class="text-justify">
+              Nous sommes passionnés par la cuisine et le partage des bonnes
+              recettes. Nous croyons que cuisiner doit être accessible et
+              amusant pour tous. Notre équipe teste et sélectionne chaque
+              recette avec soin, en mettant l'accent sur des ingrédients frais
+              et des techniques faciles à comprendre. Rejoignez notre communauté
+              de gourmets et découvrez des astuces, des conseils et des recettes
+              qui égayeront vos repas au quotidien.
+            </p>
+          </div>
         </div>
-        <div class="col-md-1 d-sm-none d-md-block d-none"></div>
-        <div class="col-md-2 d-sm-none d-md-block d-none">
-          <img src="img/nourriture.png" class="d-block w-100" alt="nourriture" />
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-2 d-sm-none d-md-block d-none">
-          <img src="/img/bouffe.png" class="d-block w-100" alt="bouffe" />
-        </div>
-        <div class="col-md-1 d-sm-none d-md-block d-none"></div>
-        <div class="col-md-9 p-4 p-sm-0">
-          <h2>À propos de notre passion pour la cuisine</h2>
-          <p class="text-justify ">
-            Nous sommes passionnés par la cuisine et le partage des bonnes
-            recettes. Nous croyons que cuisiner doit être accessible et
-            amusant pour tous. Notre équipe teste et sélectionne chaque
-            recette avec soin, en mettant l'accent sur des ingrédients frais
-            et des techniques faciles à comprendre. Rejoignez notre communauté
-            de gourmets et découvrez des astuces, des conseils et des recettes
-            qui égayeront vos repas au quotidien.
-          </p>
-        </div>
-      </div>
-    </section>
-  </main>
+      </section>
+    </main>
 
-  <footer class="bg-dark text-info ps-3 pe-3">
-    <p class="text-center pt-4 pb-2">
-      Alexandre Roy et Emmanuel Xudous | ©Copyright 2024 | 05B - Travail 2 |
-      Création d'un site web avec Bootstrap et design UX
-    </p>
+    <footer class="bg-dark text-info ps-3 pe-3">
+      <p class="text-center pt-4 pb-2">
+        Alexandre Roy et Emmanuel Xudous | ©Copyright 2024 | 05B - Travail 2 |
+        Création d'un site web avec Bootstrap et design UX
+      </p>
 
-    <p class="text-center pb-2">
-      <a class="text-decoration-none text-info"
-        href="mailto:alexandre@lacuisinecoquine.ca">alexandre@lacuisinecoquine.ca</a>
-      |
-      <a class="text-decoration-none text-info"
-        href="mailto:emmanuel@lacuisinecoquine.ca">emmanuel@lacuisinecoquine.ca</a>
-    </p>
+      <p class="text-center pb-2">
+        <a
+          class="text-decoration-none text-info"
+          href="mailto:alexandre@lacuisinecoquine.ca"
+          >alexandre@lacuisinecoquine.ca</a
+        >
+        |
+        <a
+          class="text-decoration-none text-info"
+          href="mailto:emmanuel@lacuisinecoquine.ca"
+          >emmanuel@lacuisinecoquine.ca</a
+        >
+      </p>
 
-    <p class="visually-hidden" id="descriptionNAV2">Menu Secondaire</p>
+      <p class="visually-hidden" id="descriptionNAV2">Menu Secondaire</p>
 
-    <ul class="text-center pb-3 mb-0 ps-0" aria-describedby="descriptionNAV2">
-      <li class="d-inline-block">
-        <a class="nav2-custom" href="index.html">ACCUEIL</a>
-      </li>
-      <li class="d-inline-block"> | </li>
-      <li class="d-inline-block">
-        <a class="nav2-custom" href="recettes.html">RECETTES</a>
-      </li>
-      <li class="d-inline-block"> | </li>
-      <li class="d-inline-block">
-        <a class="nav2-custom" href="formulaire.html">FORMULAIRE</a>
-      </li>
-      <li class="d-inline-block"> | </li>
-      <li class="d-inline-block">
-        <a class="nav2-custom" href="#">BOUTIQUE</a>
-      </li>
-      <li class="d-inline-block"> | </li>
-      <li class="d-inline-block">
-        <a class="nav2-custom" href="#">INGRÉDIENTS</a>
-      </li>
-    </ul>
+      <ul class="text-center pb-3 mb-0 ps-0" aria-describedby="descriptionNAV2">
+        <li class="d-inline-block">
+          <a class="nav2-custom" href="index.html">ACCUEIL</a>
+        </li>
+        <li class="d-inline-block">|</li>
+        <li class="d-inline-block">
+          <a class="nav2-custom" href="recettes.html">RECETTES</a>
+        </li>
+        <li class="d-inline-block">|</li>
+        <li class="d-inline-block">
+          <a class="nav2-custom" href="formulaire.html">FORMULAIRE</a>
+        </li>
+        <li class="d-inline-block">|</li>
+        <li class="d-inline-block">
+          <a class="nav2-custom" href="#">BOUTIQUE</a>
+        </li>
+        <li class="d-inline-block">|</li>
+        <li class="d-inline-block">
+          <a class="nav2-custom" href="#">INGRÉDIENTS</a>
+        </li>
+      </ul>
 
-    <a class="back-to-top" href="index.html"><span class="visually-hidden">Retour en haut de la page</span><i
-        class="bi bi-arrow-bar-up fs-1 text-light"></i></a>
-  </footer>
+      <a class="back-to-top" href="index.html"
+        ><span class="visually-hidden">Retour en haut de la page</span
+        ><i class="bi bi-arrow-bar-up fs-1 text-light"></i
+      ></a>
+    </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-    crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

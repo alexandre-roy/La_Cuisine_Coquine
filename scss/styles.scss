@@ -10,7 +10,7 @@ $secondary: #2e4c42;
 /* BLANC CASSÉ */
 $body-bg: #f1edde;
 $info: #f1edde;
-/* BRUN PÂLE */ 
+/* BRUN PÂLE */
 $light: #c7bd9f;
 /* BRUN FONCÉ */
 $dark: #674e2d;
@@ -34,7 +34,7 @@ $font-family-base: "Montserrat";
   }
 }
 
-.nav-custom{
+.nav-custom {
   @extend .nav-link;
   @extend .btn;
   @extend .btn-primary;
@@ -53,24 +53,24 @@ $font-family-base: "Montserrat";
   color: $info;
 }
 
-.nav2-custom{
+.nav2-custom {
   @extend .text-decoration-none;
   @extend .text-info;
 }
 
 /*** CLASSES POUR FORMULAIRE ***/
-.form-check-input:checked{
+.form-check-input:checked {
   background-color: $secondary;
   border-color: $secondary;
 }
 
-.form-input-custom{
+.form-input-custom {
   @extend .form-control;
   @extend .bg-white;
   @extend .border-black;
 }
 
-.form-input-group-custom{
+.form-input-group-custom {
   @extend .input-group-text;
   @extend .border-black;
 }
@@ -80,15 +80,16 @@ $font-family-base: "Montserrat";
   max-width: 75vh;
 }
 
-.carousel-caption{
+.carousel-caption {
   height: 20vh;
 }
 
-.carousel-control-next, .carousel-control-prev{
+.carousel-control-next,
+.carousel-control-prev {
   filter: invert(1);
 }
 
-.img-carousel{
+.img-carousel {
   max-height: 75vh;
 }
 
@@ -106,6 +107,6 @@ $font-family-base: "Montserrat";
   }
 }
 
-.card-size{
+.card-size {
   height: 120px !important;
 }
